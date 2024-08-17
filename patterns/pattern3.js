@@ -1,9 +1,9 @@
 // n=5
-// *
-// **
-// ***
-// ****
-// *****
+// 1
+// 12
+// 123
+// 1234
+// 12345
 
 class Solution {
   pattern2(n) {
@@ -11,7 +11,7 @@ class Solution {
       let stars = "";
 
       for (let j = 1; j <= i; j++) {
-        stars = stars + "*";
+        stars = stars + j;
       }
 
       console.log(stars);

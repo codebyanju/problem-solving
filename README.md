@@ -1,2 +1,2 @@
 # problem-solving
-problem-solving
+DSA problem solving in JavaScript

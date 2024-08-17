@@ -6,7 +6,7 @@
 // 55555
 
 class Solution {
-  pattern2(n) {
+  pattern4(n) {
     for (let i = 1; i <= n; i++) {
       let stars = "";
 
@@ -20,4 +20,4 @@ class Solution {
 }
 
 const solution = new Solution();
-solution.pattern2(5);
+solution.pattern4(5);

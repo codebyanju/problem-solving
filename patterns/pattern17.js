@@ -1,9 +1,9 @@
 //n = 5
-A
-ABA
-ABCBA
-ABCDCBA
-ABCDEDCBA
+// A
+// ABA
+// ABCBA
+// ABCDCBA
+// ABCDEDCBA
 
 class Solution {
   pattern17(n) {

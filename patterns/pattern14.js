@@ -1,3 +1,10 @@
+// n = 5
+// A
+// AB
+// ABC
+// ABCD
+// ABCDE
+
 class Solution {
   pattern14(n) {
     for (let i = 1; i <= n; i++) {

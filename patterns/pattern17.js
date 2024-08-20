@@ -32,3 +32,56 @@ class Solution {
 
 const solution = new Solution();
 solution.pattern17(5);
+
+//using counter
+class Solution {
+  pattern17(n) {
+    let counter = 1;
+    for (let i = 1; i <= n; i++) {
+      let row = "";
+      let ch = "A";
+
+      //spaces
+      for (let j = 1; j <= n - i; j++) {
+        row = row + " ";
+      }
+
+      //chars
+      for (let j = 1; j <= counter; j++) {
+        row = row + String.fromCharCode(ch.charCodeAt(0));
+        if (j < i) ch = String.fromCharCode(ch.charCodeAt(0) + 1);
+        else ch = String.fromCharCode(ch.charCodeAt(0) - 1);
+      }
+      console.log(row);
+      counter += 2;
+    }
+  }
+}
+
+//using midpoint
+class Solution {
+  pattern17(n) {
+    let counter = 1;
+    for (let i = 1; i <= n; i++) {
+      let row = "";
+      let ch = "A";
+
+      //spaces
+      for (let j = 1; j <= n - i; j++) {
+        row = row + " ";
+      }
+
+      let midpoint = Math.floor((2 * i - 1) / 2);
+
+      //chars
+      for (let j = 1; j <= 2 * i - 1; j++) {
+        row = row + String.fromCharCode(ch.charCodeAt(0));
+        if (j <= midpoint)
+          // or j<i
+          ch = String.fromCharCode(ch.charCodeAt(0) + 1);
+        else ch = String.fromCharCode(ch.charCodeAt(0) - 1);
+      }
+      console.log(row);
+    }
+  }
+}

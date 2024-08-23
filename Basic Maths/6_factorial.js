@@ -11,8 +11,7 @@ class Solution {
 }
 
 const sol = new Solution();
-const ans = sol.factorial();
-5;
+const ans = sol.factorial(5);
 console.log(ans);
 
 // TC = O(N) -   Iterating once from 1 to N

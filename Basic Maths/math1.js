@@ -29,3 +29,6 @@ console.log(ans);
 const sol2 = new Solution2();
 let ans2 = sol2.countDigit(123456);
 console.log(ans2);
+
+TC = O(log10(N));
+SC - O(1);

@@ -59,16 +59,16 @@ class Solution2 {
     for (let i = 1; i <= n; i++) {
       let stars = "*".repeat(i); // Increasing number of stars
       let spaces = " ".repeat((n - i) * 2); // Decreasing number of spaces
-      pattern += stars + spaces + stars + "\n"; // Form the line and add a newline
-      console.log(pattern);
+      pattern = stars + spaces + stars; // Form the line
+      console.log(pattern); // Print each row
     }
 
     // Lower part of the pattern
     for (let i = n - 1; i >= 1; i--) {
       let stars = "*".repeat(i); // Decreasing number of stars
       let spaces = " ".repeat((n - i) * 2); // Increasing number of spaces
-      pattern += stars + spaces + stars + "\n"; // Form the line and add a newline
-      console.log(pattern);
+      pattern = stars + spaces + stars; // Form the line
+      console.log(pattern); // Print each row
     }
   }
 }
@@ -94,11 +94,11 @@ class Solution3 {
   }
 }
 
-// const solution = new Solution();
-// solution.pattern20(4);
+const solution = new Solution();
+solution.pattern20(4);
 
 const solution2 = new Solution2();
 solution2.pattern20(4);
 
-// const solution3 = new Solution3();
-// solution3.pattern20(4);
+const solution3 = new Solution3();
+solution3.pattern20(4);

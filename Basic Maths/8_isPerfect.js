@@ -12,7 +12,7 @@ class Solution {
 
 class Solution2 {
   isPerfect(n) {
-    if (n <= 1) return false;
+    if (n <= 1) return false; //keep in mind this case
 
     let sum = 1;
 

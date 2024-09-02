@@ -10,5 +10,8 @@ class Solution {
 }
 
 const sol = new Solution();
-const ans = sol.arraySortedOrNot([11,2,3,4],4);
+const ans = sol.arraySortedOrNot([11, 2, 3, 4], 4);
 console.log(ans);
+
+// TC = O(N) - Perform a single traversal through the array, making a constant-time comparison for each element.
+// SC - O(1) - A constant amount of extra space for variables is used, independent of the input size.
